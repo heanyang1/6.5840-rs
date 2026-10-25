@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/labgob",
+    "crates/labrpc",
+    "crates/tester",
+    "crates/kvsrv1/rpc",
+    "crates/mr",
+    "crates/kvsrv1",
+    "crates/raft1",
+    "crates/kvraft1",
+    "crates/shardkv1",
+]
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bincode = "1"
+rand = "0.8"
+crossbeam-channel = "0.5"
+labgob = { path = "crates/labgob" }
+labrpc = { path = "crates/labrpc" }
+tester = { path = "crates/tester" }

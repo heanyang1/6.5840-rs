@@ -1,0 +1,5 @@
+# Run tests sequentially, like `go test` does.  The lab tests use global
+# timing assumptions (election timeouts &c) and don't play well with
+# running several of them in parallel in the same process.
+[env]
+RUST_TEST_THREADS = "1"

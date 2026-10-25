@@ -1,0 +1,9 @@
+[package]
+name = "labrpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+labgob = { workspace = true }
+serde = { workspace = true }
+rand = { workspace = true }

@@ -1,0 +1,28 @@
+[package]
+name = "mr"
+version = "0.1.0"
+edition = "2021"
+
+# The MapReduce "main" binaries, like Go's src/main/mr*.go.
+[[bin]]
+name = "mr-sequential"
+path = "src/bin/mr-sequential.rs"
+
+[[bin]]
+name = "mr-coordinator"
+path = "src/bin/mr-coordinator.rs"
+
+[[bin]]
+name = "mr-worker"
+path = "src/bin/mr-worker.rs"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+libc = "0.2"
+rand = { workspace = true }
+
+[dev-dependencies]
+regex = "1"
+tester = { workspace = true }

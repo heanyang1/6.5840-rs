@@ -1,0 +1,17 @@
+[package]
+name = "shardkv1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+raft1 = { path = "../raft1" }
+kvraft1 = { path = "../kvraft1" }
+kvsrv1 = { path = "../kvsrv1" }
+kvsrv1-rpc = { path = "../kvsrv1/rpc" }
+labgob = { workspace = true }
+labrpc = { workspace = true }
+tester = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rand = { workspace = true }
+crossbeam-channel = { workspace = true }

@@ -1,0 +1,18 @@
+[package]
+name = "kvraft1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+raft1 = { path = "../raft1" }
+kvsrv1-rpc = { path = "../kvsrv1/rpc" }
+labgob = { workspace = true }
+labrpc = { workspace = true }
+tester = { workspace = true }
+serde = { workspace = true }
+rand = { workspace = true }
+crossbeam-channel = { workspace = true }
+
+[dev-dependencies]
+kvsrv1 = { path = "../kvsrv1" }
+tester = { workspace = true }

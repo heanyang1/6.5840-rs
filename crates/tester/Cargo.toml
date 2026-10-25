@@ -1,0 +1,12 @@
+[package]
+name = "tester"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+labgob = { workspace = true }
+labrpc = { workspace = true }
+kvsrv1-rpc = { path = "../kvsrv1/rpc" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rand = { workspace = true }

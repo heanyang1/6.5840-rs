@@ -1,0 +1,10 @@
+[package]
+name = "kvsrv1-rpc"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "kvsrv1_rpc"
+
+[dependencies]
+serde = { workspace = true }

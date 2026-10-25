@@ -1,0 +1,15 @@
+[package]
+name = "raft1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+labgob = { workspace = true }
+labrpc = { workspace = true }
+tester = { workspace = true }
+serde = { workspace = true }
+rand = { workspace = true }
+crossbeam-channel = { workspace = true }
+
+[dev-dependencies]
+tester = { workspace = true }

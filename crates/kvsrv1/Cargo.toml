@@ -1,0 +1,13 @@
+[package]
+name = "kvsrv1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kvsrv1-rpc = { path = "rpc" }
+tester = { workspace = true }
+labrpc = { workspace = true }
+serde = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }
